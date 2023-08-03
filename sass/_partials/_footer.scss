@@ -1,0 +1,49 @@
+/* ----------------------------------------------------------------
+  フッターのレイアウト
+---------------------------------------------------------------- */
+.site_footer {
+  background-color: $baseColor;
+  padding: 60px 38px 78px;
+}
+@include res_min( $break ) {
+  .site_footer {
+    padding: 70px;
+  }
+}
+
+.footer_contents {
+  text-align: center;
+  .logo_footer {
+    margin: 0 auto;
+    width: 66.667%;
+  }
+  .footer_link {
+    margin-top: 30px;
+  }
+  .button {
+    justify-content: flex-start;
+    padding: 17px 30px;
+  }
+}
+@include res_min( $break ) {
+  .footer_contents {
+    @include flex(nowrap, space-between, center);
+    &::after {
+      content: '';
+      flex: 0 1 200px;
+      height: 100%;
+    }
+    .logo_footer {
+      flex: 0 0 200px;
+    }
+    .footer_link {
+      flex-basis: calc(100% - 200px);
+      margin-top: 0;
+    }
+    .button {
+      margin: 0 30px;
+      padding: 18px 35px;
+      min-width: 0;
+    }
+  }
+}

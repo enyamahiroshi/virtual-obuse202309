@@ -1,0 +1,269 @@
+/* ------------------------------------
+//  BASE
+// ----------------------------------*/
+a {
+  display: inline-block;
+  color: $baseColor;
+  text-decoration: none;
+  transition: all .1s linear 0s;
+  &:link, &:visited {
+    color: $linkColor;
+    text-decoration: none;
+  }
+  &:hover, &:active {
+    opacity: .8;
+  }
+  // ウェブアイコン使用時
+  i {
+    margin: 0 4px;
+  }
+  // transform使用時にchromeでズレが生じるのを防ぐ
+  backface-visibility: hidden;
+}
+
+//個別にリンクカラー等を変更
+header,
+footer {
+  a {
+    &:link, &:visited {
+      color: $baseColor;
+      text-decoration: none;
+    }
+    &:hover, &:active {
+      opacity: 1;
+      color: $baseColor;
+      text-decoration: none;
+    }
+  }
+}
+
+//画像リンク
+a img {
+  opacity: 1;
+}
+@include res_min( $break ) {
+  a img {
+    transition: opacity .1s linear 0s;
+    backface-visibility: hidden;
+    &:hover {
+      opacity: .8;
+    }
+  }
+}
+
+
+/* ----------------------------------------------------------------
+  アイコンタイプ
+---------------------------------------------------------------- */
+// 左に > アイコン
+// .link_type_arrow_left1 {
+//   padding: 0 0 0 18px;
+//   position: relative;
+//   &::before {
+//     content: '';
+//     width: 7px;
+//     height: 100%;
+//     background-image: url(./assets/img/common/ico_arrow_r_white.svg);
+//     background-repeat: no-repeat;
+//     background-position: left top;
+//     background-size: 100% auto;
+//     position: absolute;
+//     top: .4em;
+//     left: 0;
+//   }
+// }
+
+
+/* ----------------------------------------------------------------
+  ボタンタイプ
+---------------------------------------------------------------- */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.5;
+  letter-spacing: .05em;
+  &:link, &:visited {
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid $baseColor;
+    border-radius: 6px;
+  }
+  &:hover, &:active {
+    opacity: .8;
+    color: inherit;
+  }
+  span {
+    vertical-align: middle;
+  }
+  i {
+    margin-left: 5px;
+    img {
+      vertical-align: -.1em;
+      width: 14px;
+    }
+  }
+}
+@include res_min( $break ) {
+  .button {
+    white-space: nowrap;
+    display: inline-flex;
+    min-width: 400px;
+    margin: 0 15px;
+    padding: 18px 15px;
+    i {
+      margin-left: 10px;
+    }
+  }
+}
+
+
+/* ----------------------------------------------------------------
+  ボタンWrap
+---------------------------------------------------------------- */
+.button_wrap {
+  margin-top: 40px;
+  text-align: center;
+}
+
+
+/* ----------------------------------------------------------------
+  ページナビ
+---------------------------------------------------------------- */
+// .pager {
+//   margin-top: 16px;
+//   padding: 0 46px;
+//   @include flex(wrap, center, stretch);
+//   position: relative;
+
+//   .prev,
+//   .next,
+//   .pager_num {
+//     width: 30px;
+//     flex: 0 0 30px;
+//     height: 30px;
+//     border-radius: 100%;
+//     font-family: $ff-num;
+//     font-size: 1.4rem;
+//     line-height: 1;
+//     @include flex(nowrap, center, center);
+//   }
+
+//   .pager_num {
+//     margin: 16px 8px 0;
+//   }
+//   a.pager_num {
+//     &:hover, &:active {
+//       text-decoration: none;
+//       background-color: $brown;
+//       font-weight: 700;
+//       color: #fff;
+//     }
+//   }
+
+//   .current {
+//     background-color: $brown;
+//     font-weight: 700;
+//     color: #fff;
+//   }
+
+//   // 前後
+//   .prev,
+//   .next {
+//     position: absolute;
+//     bottom: 0;
+//     &::before {
+//       content: "";
+//       width: 30px;
+//       height: 30px;
+//       background-image: url(./assets/img/common/ico_arrow_pager.svg);
+//       background-repeat: no-repeat;
+//       background-position: center center;
+//       background-size: 5px;
+//       border-radius: 15px;
+//       position: absolute;
+//       bottom: 0;
+//     }
+//     &::after {
+//       content: "";
+//       width: 30px;
+//       height: 30px;
+//       border: 1px solid $brown;
+//       border-radius: 15px;
+//       position: absolute;
+//       bottom: 0;
+//     }
+//     &:hover, &:active {
+//       text-decoration: none;
+//       &::before {
+//         background-color: $brown;
+//         background-image: url(./assets/img/common/ico_arrow_pager_white.svg);
+//       }
+//     }
+//   }
+//   .prev {
+//     left: 0;
+//     padding-left: 40px;
+//     &::before {
+//       transform: scale(-1,-1);
+//     }
+//     &::before,
+//     &::after {
+//       left: 0;
+//     }
+//   }
+//   .next {
+//     right: 0;
+//     padding-right: 40px;
+//     &::before,
+//     &::after {
+//       left: auto;
+//       right: 0;
+//     }
+//   }
+
+//   ///// 個別記事内
+//   &__entry {
+//     margin-top: 34px;
+//     margin-bottom: 60px;
+//     padding: 0;
+//     @include flex(nowrap, space-between, stretch);
+//     .prev,
+//     .next {
+//       width: auto;
+//       flex: 0 0 auto;
+//       position: relative;
+//     }
+//   }
+
+// }
+
+
+/* ----------------------------------------------------------------
+  その他
+---------------------------------------------------------------- */
+
+// blank
+// .link_blank {
+//   img {
+//     vertical-align: -1px;
+//     margin-left: 1px;
+//     width: 14px;
+//   }
+// }
+
+// telリンク
+// .link_tel {
+//   &:hover, &:focus {
+//     outline: none;
+//     text-decoration: none;
+//   }
+// }
+// @include res_min( $break ) {
+//   .link_tel {
+//     pointer-events: none;
+//   }
+// }
