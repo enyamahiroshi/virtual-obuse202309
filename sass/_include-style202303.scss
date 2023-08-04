@@ -369,7 +369,7 @@ svg
     line-height: 1.667;
 
     text-align: center;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 }
 .sec_title img
 {
@@ -389,7 +389,7 @@ svg
     margin-bottom: 25px;
 
     text-align: center;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 }
 .sec_sub_title span
 {
@@ -407,7 +407,7 @@ svg
     padding-left: 1em;
 
     text-indent: -1.1em;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 }
 .indent_text::before
 {
@@ -695,7 +695,7 @@ a img
 
     padding: .8em 1em;
 
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 
     color: #222;
 }
@@ -995,7 +995,7 @@ body.is__open
 
     height: 79px;
 
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 
     border: 2px solid #d00101;
     border-radius: 6px;
@@ -1072,7 +1072,7 @@ body.is__open
 
     height: 45px;
 
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 
     color: #d00101;
     border-bottom: 1px solid #d00101;
@@ -1094,7 +1094,7 @@ body.is__open
     margin: 0 18px;
     padding: 16px 0;
 
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 
     color: #d00101;
     border-bottom: 1px solid #d00101;
@@ -1171,7 +1171,7 @@ body.is__open
     margin-top: 30px;
 
     text-align: center;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 }
 .about_voice
 {
@@ -1322,7 +1322,7 @@ body.is__open
 
     text-align: center;
     white-space: nowrap;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 }
 .schedule .schedule__item .schedule__item__name
 {
@@ -1354,7 +1354,7 @@ body.is__open
 
     margin-top: 2px;
 
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 }
 .schedule .schedule__item .schedule__item__date .date_time > div
 {
@@ -1426,7 +1426,7 @@ body.is__open
 {
     margin-top: 22px;
 
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 }
 .schedule_after_program .schedule .schedule__item
 {
@@ -1508,7 +1508,7 @@ body.is__open
     padding-top: 20px;
     padding-bottom: 15px;
 
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 
     color: #ebad05;
     border-bottom: 1px solid #ebad05;
@@ -1524,7 +1524,7 @@ body.is__open
 
     margin-top: 13px;
 
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 
     color: $baseColor;
 }
@@ -1593,7 +1593,7 @@ body.is__open
 {
     font-weight: 600;
 
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 }
 .about_obuse .about_more .about_more_list
 {
@@ -1707,7 +1707,7 @@ body.is__open
 {
     font-weight: 600;
 
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 
     color: #22afa4;
 }
@@ -1851,7 +1851,7 @@ body.is__open
     font-size: 2.4rem;
     line-height: 1.2;
 
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 
     color: #bf569b;
 
@@ -1926,7 +1926,7 @@ body.is__open
     font-size: 2.4rem;
     line-height: 1.2;
 
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 
     color: $baseColor;
 
@@ -1969,7 +1969,7 @@ body.is__open
 {
     body
     {
-        letter-spacing: .1em;
+        letter-spacing: 0.1em;
     }
     .no-pc
     {
@@ -2212,7 +2212,7 @@ body.is__open
     }
     .about_block .about_block_text p
     {
-        letter-spacing: .1em;
+        letter-spacing: 0.1em;
     }
     .about_step
     {
@@ -2256,7 +2256,7 @@ body.is__open
 
         padding: 5px 10px 5px 32px;
 
-        letter-spacing: .1em;
+        letter-spacing: 0.1em;
 
         border-left: 1px solid #d00101;
 
@@ -2549,7 +2549,7 @@ body.is__open
     {
         margin-top: 0;
 
-        letter-spacing: .1em;
+        letter-spacing: 0.1em;
     }
     .about_obuse .about_obuse_contents .about_obuse_contents_img
     {
@@ -2631,7 +2631,7 @@ body.is__open
     }
     .details_block .details_block_data p
     {
-        letter-spacing: .1em;
+        letter-spacing: 0.1em;
     }
     .details_block .details_block_data p:not(:first-child)
     {

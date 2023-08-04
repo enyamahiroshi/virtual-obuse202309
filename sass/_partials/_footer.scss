@@ -2,7 +2,7 @@
   フッターのレイアウト
 ---------------------------------------------------------------- */
 .site_footer {
-  background-color: $baseColor;
+  background-color: #5c2a00;
   padding: 60px 38px 78px;
 }
 @include res_min( $break ) {
@@ -23,6 +23,9 @@
   .button {
     justify-content: flex-start;
     padding: 17px 30px;
+    & + .button{
+      margin-top: 20px;
+    }
   }
 }
 @include res_min( $break ) {
@@ -38,12 +41,14 @@
     }
     .footer_link {
       flex-basis: calc(100% - 200px);
-      margin-top: 0;
+      margin: 0 30px;
     }
     .button {
-      margin: 0 30px;
-      padding: 18px 35px;
+      display: block;
       min-width: 0;
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 18px 35px;
     }
   }
 }

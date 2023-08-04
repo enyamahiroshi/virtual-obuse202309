@@ -34,16 +34,23 @@
   padding-bottom: 80px;
   z-index: 2;
   .concept_title {
-    margin-bottom: 35px;
-    line-height: 1;
-    .concept_title_sub {
+    margin-bottom: 30px;
+    padding-bottom: 0.333em;
+    border-bottom: 5px solid $baseColor;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: calc(37 / 30);
+    letter-spacing: 0.1em;
+    &::before{
+      content: attr(data-en);
       display: block;
-      width: 108px;
-    }
-    .concept_title_main {
-      display: block;
-      margin-top: 33px;
-      max-width: 600px;
+      margin-bottom: 25px;
+      font-family: $ff-en;
+      font-size: 2rem;
+      font-weight: bold;
+      line-height: 1;
+      letter-spacing: 0.1em;
+      color: #B98966;
     }
   }
   .contents_block1 {
@@ -56,7 +63,7 @@
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 96%;
-    margin-top: 10px;
+    margin-top: 15px;
     padding-top: 60%;
     .inner {
       padding: 0 15px;
@@ -71,12 +78,14 @@
       padding-top: 4%;
       margin-bottom: 64px;
       width: 64.4%;
-      .concept_title_sub {
-        width: 108px;
-      }
-      .concept_title_main {
-        margin-top: 33px;
-        max-width: 600px;
+
+      padding-bottom: 0.4em;
+      border-bottom: 5px solid $baseColor;
+      font-size: 5.2rem;
+      font-weight: 900;
+      line-height: calc(64 / 52);
+      &::before{
+        margin-bottom: 25px;
       }
     }
     .contents_block1 {
@@ -85,8 +94,8 @@
       background-position: right top;
       background-size: 36.75%;
       padding-bottom: 74px;
-      @include res_min( 1366 ) {
-        background-size: 502px;
+      @include res_min( 1490 ) {
+        background-size: auto 100%;
       }
       .inner {
         padding: 0 5%;
@@ -101,8 +110,8 @@
     .contents_block2 {
       background-image: url(./assets/img/bg_concept_contents_block2_large.png);
       background-size: 34.77%;
-    @include res_min( 1366 ) {
-      background-size: 475px;
+    @include res_min( 1490 ) {
+      background-size: auto 100%;
     }
       padding-top: 0;
       .inner {
@@ -121,7 +130,7 @@
 
 // about
 .sec_about {
-  background-color: #fdf4e5;
+  background-color: #F7F7F7;
 }
 
 .about_block {
@@ -130,18 +139,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid $keyColor;
+    background-color: #fff;
+    border: 2px solid $mainColor;
     border-radius: 6px;
     height: 79px;
     font-size: 2rem;
     font-weight: 600;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     position: relative;
     &::after {
       content: '';
       width: 20px;
       height: 20px;
-      background-image: url(./assets/img/ico_arrow_red.svg);
+      background-image: url(./assets/img/ico_arrow_brawn.svg);
       position: absolute;
       left: calc(50% - 10px);
       bottom: -20px;
@@ -159,10 +169,11 @@
     @include flex(nowrap, flex-start, stretch);
     &:first-of-type {
       margin-top: 90px;
-      align-items: center;
+      align-items: stretch;
     }
     .about_block_title {
       flex-basis: 37.9%;
+      margin-top: .25em;
       white-space: nowrap;
       &::after {
         left: auto;
@@ -177,7 +188,7 @@
       flex-basis: 62.1%;
       padding-left: 46px;
       p {
-        letter-spacing: .1em;
+        letter-spacing: 0.1em;
       }
     }
   }
@@ -186,7 +197,7 @@
 
 .about_step_wrap {}
 .about_step {
-  border: 2px solid $keyColor;
+  border: 2px solid $mainColor;
   border-radius: 10px;
   margin-top: 16px;
   position: relative;
@@ -196,7 +207,7 @@
     content: '';
     width: 4px;
     height: 16px;
-    background-color: $keyColor;
+    background-color: $mainColor;
     position: absolute;
     left: calc(50% - 2px);
     bottom: -18px;
@@ -207,23 +218,23 @@
     align-items: center;
     background-color: #fff;
     border-radius: 10px 10px 0 0;
-    border-bottom: 1px solid $keyColor;
+    border-bottom: 1px solid $mainColor;
     height: 45px;
     font-family: $ff-en;
     font-size: 1.5rem;
     font-weight: 900;
-    letter-spacing: .1em;
-    color: $keyColor;
+    letter-spacing: 0.1em;
+    color: $mainColor;
   }
   .about_step_title {
     padding: 16px 0;
     margin: 0 18px;
-    border-bottom: 1px solid $keyColor;
+    border-bottom: 1px solid $mainColor;
     font-size: 2.4rem;
     font-weight: 600;
     line-height: 1.1667;
-    letter-spacing: .1em;
-    color: $keyColor;
+    letter-spacing: 0.1em;
+    color: $mainColor;
   }
   .about_step_text {
     width: 100%;
@@ -240,12 +251,15 @@
     &:not(:last-of-type):before {
       left: 57px;
     }
+    background-color: #fff;
     .about_step_num {
       flex-basis: 12.5%;
       white-space: nowrap;
-      border-radius: 10px 0 0 10px;
+      background-color: $mainColor;
+      border-radius: 7px 0 0 7px;
       border-bottom: none;
-      border-right: 1px solid $keyColor;
+      border-right: 1px solid $mainColor;
+      color: #fff;
       height: auto;
     }
     .about_step_title {
@@ -258,10 +272,10 @@
     .about_step_text {
       flex-basis: 34.5%;
       align-self: center;
-      border-left: 1px solid $keyColor;
+      border-left: 1px solid $mainColor;
       padding: 5px 10px 5px 32px;
       font-size: 1.3rem;
-      letter-spacing: .1em;
+      letter-spacing: 0.1em;
     }
   }
 }
@@ -295,7 +309,7 @@
       content: '';
       width: 100%;
       height: 2px;
-      background: $keyColor;
+      background: $mainColor;
       position: absolute;
       left: 0;
       top: calc(50% - 1px);
@@ -309,30 +323,24 @@
   .about_gain_text {
     margin-top: 30px;
     font-weight: 600;
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
     text-align: center;
   }
 }
 @include res_min( $break ) {
   .about_gain_wrap {
-    @include flex(nowrap, space-between, stretch);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 3%;
   }
   .about_gain {
-    flex-basis: calc(31.7% - 1.8%);
     margin-top: 0;
     &:first-of-type {
       margin-top: 0;
     }
     .about_gain_image {
-      margin-top: 30px;
-      width: 93%;
-    }
-    &:nth-of-type(2) {
-      flex-basis: calc(36.6% - 1.8%);
-      .about_gain_image {
-        margin-top: 30px;
-        width: 80%;
-      }
+      margin-top: 20px;
+      width: 95%;
     }
   }
 }
@@ -340,7 +348,7 @@
 
 .about_voice_wrap {}
 .about_voice {
-  border: 2px solid $keyColor;
+  border: 2px solid $mainColor;
   border-radius: 20px;
   padding: 20px 26px 26px;
   margin-top: 12px;
@@ -350,7 +358,7 @@
   .about_voice_title {
     padding-bottom: 15px;
     font-weight: 600;
-    border-bottom: 1px solid $keyColor;
+    border-bottom: 1px solid $mainColor;
   }
   .about_voice_text {
     margin-top: 17px;
@@ -409,7 +417,7 @@
     margin-top: 40px;
     h4 {
       font-weight: 600;
-      letter-spacing: .1em;
+      letter-spacing: 0.1em;
     }
     .about_more_list {
       margin-top: 10px;
@@ -450,8 +458,8 @@
           &:hover, &:active {
             opacity: 1;
             color: #fff;
-            background-color: $keyColor;
-            border-color: $keyColor;
+            background-color: $brown;
+            border-color: $brown;
             em::after {
               background-image: url(./assets/img/ico_blank_white.svg);
             }
@@ -468,39 +476,34 @@
 }
 @include res_min( $break ) {
   .about_obuse {
-    margin-top: 118px;
-    padding: 82px 60px 60px;
-
-    .about_obuse_title {
-      top: -18px;
-      img {
-        max-width: 187px;
-      }
-    }
-
+    margin-top: 90px;
     .about_obuse_contents {
       @include flex(nowrap, space-between, stretch);
       .about_obuse_contents_text {
-        flex-basis: 65.5%;
+        flex-basis: 57%;
         h3 {
           font-size: 2.8rem;
         }
         p {
-          margin-top: 15px;
-          letter-spacing: .1em;
+          margin-top: 0;
+          letter-spacing: 0.1em;
         }
       }
       .about_obuse_contents_img {
-        flex-basis: 34.5%;
-        padding-left: 43px;
-        margin-top: -20px;
+        margin-top: 5px;
+        flex-basis: 43%;
+        text-align: center;
+        img{
+          width: 58.5%;
+          max-width: 234px;
+        }
       }
     }
 
     .about_more {
       margin-top: 38px;
       .about_more_list {
-        margin-top: 15px;
+        margin-top: 4px;
         @include flex(wrap, space-between, stretch);
         .list_item {
           flex-basis: calc(50% - 6px);
@@ -521,7 +524,7 @@
 
 // お申し込みはこちらから
 .sec_inquery {
-  background-color: #ffefac;
+  background-color: #A77953;
   padding: 140px 0;
   text-align: center;
   background-image: url(./assets/img/bg_inquery1.png), url(./assets/img/bg_inquery2.png);
@@ -529,26 +532,28 @@
   background-position: left top, right bottom;
   background-size: 100%;
   .btn_inquery {
-    background-color: $keyColor;
+    background-color: $orange;
     border-radius: 6px;
     padding: 20px 10px;
     width: 80%;
     max-width: 600px;
     font-size: 2rem;
     letter-spacing: .05em;
-    color: #fff;
     font-weight: 600;
     &:link, &:visited {
       text-decoration: none;
     }
     &:hover, &:active {
+      background-color: $brown;
+      color: #fff;
     }
   }
 }
 @include res_min( $break ) {
   .sec_inquery {
     padding: 150px 0;
-    background-size: auto 120%;
+    background-image: url(assets/img/bg_inquery1-l.png), url(assets/img/bg_inquery2-l.png);
+    background-size: auto 100%;
     .btn_inquery {
       padding: 30px 20px;
     }
@@ -562,300 +567,256 @@
     margin-top: 40px;
   }
 }
-
-
-
-.schedule
-{
-    overflow: hidden;
-
-    margin-top: 25px;
-
-    border: 2px solid #5c2a00;
-    border-radius: 20px;
-}
-.schedule .schedule__item
-{
-    padding: 30px 30px 25px;
-}
-.schedule .schedule__item:not(:first-of-type)
-{
-    border-top: 1px solid #5c2a00;
-}
-.schedule .schedule__item .schedule__item__day
-{
-    display: -ms-flexbox;
-    display: flex;
-
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -ms-flex-align: center;
-    align-items: center;
-}
-.schedule .schedule__item .schedule__item__day .day_num
-{
-    font-family: 'Nunito', sans-serif;
-    font-size: 28px;
-    font-size: 2.8rem;
-    font-weight: bold;
-    line-height: 1;
-
-    color: #2ab111;
-}
-.schedule .schedule__item .schedule__item__day .day_icon
-{
-    display: -ms-flexbox;
-    display: flex;
-
-    min-width: 138px;
-    height: 29px;
-    padding: 0 0 0 10px;
-
-    border: 1px solid #2ab111;
-    border-radius: 4px;
-
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -ms-flex-align: center;
-    align-items: center;
-}
-.schedule .schedule__item .schedule__item__day .day_icon::before
-{
-    width: 44px;
-    height: 16px;
-
-    content: '';
-
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto 100%;
-}
-.schedule .schedule__item .schedule__item__day .day_icon .day_icon__text
-{
-    font-size: 15px;
-    font-size: 1.5rem;
-    font-weight: 600;
-
-    text-align: center;
-    white-space: nowrap;
-    letter-spacing: .1em;
-}
-.schedule .schedule__item .schedule__item__name
-{
-    font-size: 20px;
-    font-size: 2rem;
-    font-weight: 600;
-
-    margin-top: 20px;
-
-    letter-spacing: .05em;
-}
-.schedule .schedule__item .schedule__item__date
-{
-    margin-top: 10px;
-    padding-top: 15px;
-
-    border-top: 1px solid #5c2a00;
-}
-.schedule .schedule__item .schedule__item__date .date_day
-{
-    font-size: 18px;
-    font-size: 1.8rem;
-    font-weight: 600;
-    line-height: 1.5;
-}
-.schedule .schedule__item .schedule__item__date .date_time
-{
-    line-height: 1.5;
-
-    margin-top: 2px;
-
-    letter-spacing: .1em;
-}
-.schedule .schedule__item .schedule__item__date .date_time > div
-{
-    display: -ms-flexbox;
-    display: flex;
-
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-}
-.schedule .schedule__item .schedule__item__date .date_time dt
-{
-    margin-right: 1em;
-
-    white-space: nowrap;
-}
-.schedule .schedule__item--01 .schedule__item__day .day_icon::before
-{
-    width: 20px;
-
-    background-image: url(assets/img/icon-pc.svg);
-}
-.schedule .schedule__item--01 .schedule__item__day .day_icon .day_icon__text
-{
-    color: #2ab111;
-
-    -ms-flex-preferred-size: calc(100% - 20px);
-    flex-basis: calc(100% - 20px);
-}
-.schedule .schedule__item--02
-{
-    background-color: #e2fadd;
-}
-.schedule .schedule__item--02 .schedule__item__day .day_icon
-{
-    background-color: #2ab111;
-}
-.schedule .schedule__item--02 .schedule__item__day .day_icon::before
-{
-    width: 28px;
-
-    background-image: url(assets/img/icon-human.svg);
-}
-.schedule .schedule__item--02 .schedule__item__day .day_icon .day_icon__text
-{
-    color: #fff;
-
-    -ms-flex-preferred-size: calc(100% - 28px);
-    flex-basis: calc(100% - 28px);
-}
-.schedule_after_program
-{
-    margin-top: 15px;
-}
-.schedule_after_program .sep_schedule
-{
-    margin-top: 30px;
-
-    text-align: center;
-}
-.schedule_after_program .sep_schedule img
-{
-    width: 240px;
-}
-.schedule_after_program .sep_schedule + p
-{
-    margin-top: 22px;
-
-    letter-spacing: .1em;
-}
-.schedule_after_program .schedule .schedule__item
-{
-    display: -ms-flexbox;
-    display: flex;
-
-    padding: 24px 10px 24px 30px;
-
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    -ms-flex-align: center;
-    align-items: center;
-}
-.schedule_after_program .schedule .schedule__item .schedule__item__day
-{
-    display: block;
-
-    margin-right: 20px;
-
-    white-space: nowrap;
-}
-.schedule_after_program .schedule .schedule__item .schedule__item__name
-{
-    line-height: 1.5;
-
-    margin-top: 0;
-}
-@media only screen and (min-width: 768px){
-  .schedule
-  {
-      max-width: 772px;
-      margin-right: auto;
-      margin-left: auto;
+@include res_min( $break ) {
+  .sec_schedule {
+    .sec_title + p {
+      margin-top: 80px;
+      text-align: center;
+    }
   }
-  .schedule .schedule__item
-  {
+}
+
+.schedule{
+  overflow: hidden;
+  margin-top: 25px;
+  border: 2px solid $baseColor;
+  border-radius: 20px;
+  .schedule__item{
+    padding: 30px 30px 25px;
+    &:not(:first-of-type){
+      border-top: 1px solid $baseColor;
+    }
+    .schedule__item__day{
       display: -ms-flexbox;
       display: flex;
-
-      padding: 25px .5% 25px 4.5%;
-
-      -ms-flex-wrap: nowrap;
-          flex-wrap: nowrap;
-      -ms-flex-pack: end;
-      justify-content: flex-end;
-      -ms-flex-align: stretch;
-      align-items: stretch;
-  }
-  .schedule .schedule__item .schedule__item__day
-  {
-      display: block;
-
-      -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  }
-  .schedule .schedule__item .schedule__item__day .day_icon
-  {
-      margin-top: 8px;
-  }
-  .schedule .schedule__item .schedule__item__name
-  {
-      margin-top: 0;
-      padding: 0 2% 0 5%;
-
-      -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  }
-  .schedule .schedule__item .schedule__item__date
-  {
-      margin-top: 0;
-      margin-left: auto;
-      padding-top: 0;
-      padding-left: 4%;
-
-      border-top: none;
-      border-left: 1px solid #5c2a00;
-
-      -ms-flex-preferred-size: 45%;
-      flex-basis: 45%;
-  }
-  .schedule_after_program
-  {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+      .day_num{
+        font-family: $ff-en;
+        font-size: 28px;
+        font-size: 2.8rem;
+        font-weight: bold;
+        line-height: 1;
+        color: $mainColor;
+      }
+      .day_icon{
+        display: flex;
+        min-width: 138px;
+        height: 29px;
+        padding: 0 0 0 10px;
+        border: 1px solid $mainColor;
+        border-radius: 4px;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        &::before{
+          width: 44px;
+          height: 16px;
+          content: '';
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: auto 100%;
+        }
+      }
+      .day_icon__text{
+        font-size: 15px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        white-space: nowrap;
+        letter-spacing: 0.1em;
+      }
+    }
+    .schedule__item__name{
+      font-size: 20px;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-top: 20px;
+      letter-spacing: .05em;
+    }
+    .schedule__item__date{
       margin-top: 10px;
-  }
-  .schedule_after_program .sep_schedule + p
-  {
-      text-align: center;
-  }
-  .schedule_after_program .schedule .schedule__item .schedule__item__day
-  {
-      min-width: 138px;
-      margin-right: 0;
-  }
-  .schedule_after_program .schedule .schedule__item .schedule__item__day .day_num
-  {
-      margin-top: 2px;
-  }
-  .schedule_after_program .indent_text
-  {
-      max-width: 768px;
+      padding-top: 15px;
+      border-top: 1px solid $baseColor;
+      .date_day{
+        font-size: 18px;
+        font-size: 1.8rem;
+        font-weight: 600;
+        line-height: 1.5;
+        letter-spacing: 0.1em;
+      }
+      .date_time{
+        line-height: 1.5;
+        margin-top: 2px;
+        letter-spacing: 0.1em;
+        & > div{
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: flex-start;
+          align-items: stretch;
+        }
+        dt{
+          margin-right: 1em;
+          white-space: nowrap;
+        }
+      }
+    }
+    .schedule__item__note{
+      margin-top: 1em;
+      padding: 1.2em 1.5em;
+      background-color: #FCFAEF;
+      border-radius: 4px;
+      em{
+        display: block;
+        font-size: 1.6rem;
+        font-weight: 600;
+        line-height: calc(26 / 16);
+      }
+      p{
+        margin-top: 0.5em;
+        line-height: calc(24 / 15);
+      }
+    }
+    //個別
+    &.schedule__item--01{
+      background-color: #fff;
+      .schedule__item__day{
+        .day_icon{
+          &::before{
+            width: 20px;
+            background-image: url(assets/img/icon-pc.svg);
+          }
+          .day_icon__text{
+            color: $mainColor;
+            flex-basis: calc(100% - 20px);
+          }
+        }
+      }
+    }
+    &.schedule__item--02{
+      background-color: #F5EFD4;
+      .schedule__item__day{
+        .day_icon{
+          background-color: $mainColor;
+          &::before{
+            width: 28px;
+            background-image: url(assets/img/icon-human.svg);
+          }
+          .day_icon__text{
+            color: #fff;
+            flex-basis: calc(100% - 28px);
+          }
+        }
+      }
+    }
   }
 }
-
-
-
+.schedule_after_program{
+  margin-top: 15px;
+  .sep_schedule{
+    margin-top: 30px;
+    text-align: center;
+    img{
+      width: 240px;
+    }
+    & + p{
+      margin-top: 22px;
+      letter-spacing: 0.1em;
+    }
+  }
+  .schedule{
+    .schedule__item{
+      display: flex;
+      padding: 24px 10px 24px 30px;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      .schedule__item__day{
+        display: block;
+        margin-right: 20px;
+        white-space: nowrap;
+      }
+      .schedule__item__name{
+        line-height: 1.5;
+        margin-top: 0;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 768px){
+  .schedule{
+    max-width: 772px;
+    margin-right: auto;
+    margin-left: auto;
+    .schedule__item{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 25px .5% 25px 4.5%;
+      justify-content: flex-end;
+      align-items: stretch;
+      .schedule__item__day{
+        display: block;
+        align-self: center;
+        .day_icon{
+          margin-top: 8px;
+        }
+      }
+      .schedule__item__name{
+        margin-top: 0;
+        padding: 0 2% 0 5%;
+        align-self: center;
+      }
+      .schedule__item__date{
+        @include flex(nowrap, center, stretch);
+        flex-direction: column;
+        height: auto;
+        margin-top: 0;
+        margin-left: auto;
+        padding-top: 0;
+        padding-left: 4%;
+        border-top: none;
+        border-left: 1px solid $baseColor;
+        flex-basis: 45%;
+        .date_day{
+          width: 100%;
+          text-align: left;
+        }
+      }
+      .schedule__item__note{
+        width: 100%;
+        margin-top: 20px;
+        margin-right: 4%;
+        p{
+          margin-top: 0.3em;
+        }
+      }
+    }
+  }
+  .schedule_after_program{
+    margin-top: 20px;
+    .sep_schedule{
+      & + p{
+        text-align: center;
+      }
+    }
+    .schedule{
+      .schedule__item{
+        .schedule__item__day{
+          min-width: 138px;
+          margin-right: 0;
+          .day_num{
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+    .indent_text{
+      max-width: 768px;
+      text-align: center;
+    }
+  }
+}
 
 .schedule_table {
   border-bottom: 1px solid #707070;
@@ -935,9 +896,44 @@
 
 // テーマ
 .sec_theme {
-  background-color: #fffcf5;
+  background-color: #EAEAEA;
 }
-
+.comming-soon{
+  margin-top: 60px;
+  text-align: center;
+  & > p{
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: calc(50 / 28);
+    letter-spacing: 0.1em;
+    text-align: center;
+  }
+  .sub-text{
+  }
+  .main-text{
+    margin-top: 0.4em;
+    padding: 0.8em 1.6em;
+    border: 2px solid $baseColor;
+  }
+}
+@include res_min( $break ) {
+  .comming-soon{
+    margin-top: 70px;
+    & > p{
+      font-size: 3.2rem;
+      line-height: 2;
+    }
+    .main-text{
+      display: inline-block;
+      margin-left: 0;
+      margin-right: 0;
+      padding: 11px 48px;
+      span{
+        margin-right: 1em;
+      }
+    }
+  }
+}
 
 
 .theme
@@ -987,7 +983,7 @@
     padding-top: 20px;
     padding-bottom: 15px;
 
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 
     color: #ebad05;
     border-bottom: 1px solid #ebad05;
@@ -1003,7 +999,7 @@
 
     margin-top: 13px;
 
-    letter-spacing: .1em;
+    letter-spacing: 0.1em;
 
     color: $baseColor;
 }
@@ -1222,7 +1218,7 @@
         margin-top: 0;
         flex-basis: 61%;
         p {
-          letter-spacing: .1em;
+          letter-spacing: 0.1em;
         }
       }
     }
@@ -1232,6 +1228,7 @@
 
 // details
 .sec_details {
+  background-color: #F7F7F7;
   .inner {
     @include maxW(772);
   }
@@ -1247,7 +1244,8 @@
   }
   .details_block_title {
     font-weight: 600;
-    color: #3BD3C7;
+    letter-spacing: 0.1em;
+    color: $mainColor
   }
   .details_block_data {
     margin-top: 8px;
@@ -1273,7 +1271,7 @@
     .details_block_data {
       margin-top: 0;
       p {
-        letter-spacing: .1em;
+        letter-spacing: 0.1em;
         &:not(:first-child) {
           margin-top: .5em;
         }
@@ -1284,12 +1282,12 @@
 
 // about obuse
 .sec_about-obuse{
-  background-color: #fdf4e5;
+  background-color: #F7F7F7;
 }
 
 // news
 .sec_news {
-  background-color: #F9F8F6;
+  background-color: #EAEAEA;
   .inner {
     padding-left: 42px;
     padding-right: 42px;
@@ -1364,6 +1362,9 @@
 
 
 // faq
+.sec_faq{
+  background-color: #F7F7F7;
+}
 .faq_block {
   display: block;
   border-top: 1px solid $baseColor;
@@ -1387,7 +1388,7 @@
         flex: 0 0 54px;
         font-family: $ff-en;
         font-size: 2.4rem;
-        color: #F084CB;
+        color: $mainColor;
         line-height: 1.2;
         letter-spacing: 0.1em;
       }
@@ -1429,7 +1430,7 @@
       flex: 0 0 54px;
       font-family: $ff-en;
       font-size: 2.4rem;
-      color: #192153;
+      font-weight: bold;
       line-height: 1.2;
       letter-spacing: 0.1em;
     }
@@ -1482,10 +1483,14 @@
 }
 @include res_min( $break ) {
   .link_sns {
-    position: fixed;
     right: 20px;
     bottom: 30px;
     width: 25px;
+    a {
+      &:not(:first-of-type){
+        margin-top: 20px;
+      }
+    }
     .link_sns_note {
       margin-top: 20px;
       width: 22px;

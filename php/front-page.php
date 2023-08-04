@@ -15,29 +15,16 @@
     <section class="sec sec_concept">
       <div class="contents_block1">
         <div class="inner">
-          <h2 class="concept_title">
-            <img class="concept_title_sub" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/tit_concept_sub.png" alt="CONCEPT">
-            <img class="concept_title_main" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/tit_concept_main.png" alt="まちをまるごと「サードプレイス」に">
-          </h2>
-          <p>
-            東京から新幹線とローカル線を乗り継いで2時間30分。<br>葛飾北斎が晩年を過ごし、「栗のまち」としても知られる長野県小布施町。
-          </p>
-          <p>
-            小布施は江戸時代末期、北信地域最大の規模を誇った「六斎市」が開かれ、様々な物や人が行き交う場所として発展した。また、1980年代には暮らす人も訪れる人も心地よく過ごせる空間づくりを重視した「町並修景事業」を行い、2000年代以降は「協働と交流のまちづくり」の掛け声のもと、町内外の多様な人々のコラボレーションによりまちづくりが進められた。中でも2010年代には全国から熱意ある若者が集い「小布施」というフィールドを活かして事業構想に取り組む「小布施若者会議」を開催するなど、まちづくりの先進地としても知られている。<br>こうした歴史の中で、<em class="marker">内と外、官と民など異質なもの同士が溶けあう風土や、町にあるものを活かして独自の未来像を描く創造性</em>が育まれてきた。
-          </p>
+          <h2 class="concept_title" data-en="CONCEPT">新たな挑戦を、ともに</h2>
+          <p>東京から新幹線とローカル線を乗り継いで2時間30分。<br>葛飾北斎が晩年を過ごし、「栗のまち」としても知られる長野県小布施町。</p>
+          <p>小布施は江戸時代末期、北信地域最大の規模を誇った「六斎市」が開かれ、様々な物や人が行き交う場所として発展した。また、1980年代には暮らす人も訪れる人も心地よく過ごせる空間づくりを重視した「町並修景事業」を行い、2000年代以降は「協働と交流のまちづくり」の掛け声のもと、町内外の多様な人々のコラボレーションによりまちづくりが進められた。中でも2010年代には全国から熱意ある若者が集い「小布施」というフィールドを活かして事業構想に取り組む「小布施若者会議」を開催するなど、まちづくりの先進地としても知られている。<br>こうした歴史の中で、<em class="marker">内と外、官と民など異質なもの同士が溶けあう風土や、町にあるものを活かして独自の未来像を描く創造性</em>が育まれてきた。</p>
         </div>
       </div>
       <div class="contents_block2">
         <div class="inner">
-          <p>
-            そんな小布施には、わずか4km四方という長野県で最も面積が小さな町でありながら、「栗」や「北斎」以外にもまだまだ多くのポテンシャルが詰まっている。江戸時代から続く200年以上の歴史を持つ酒蔵、北斎に続く次の時代を担うアーティストの活躍の場を創出しようと新たな試みに挑む美術館、自然の恵みが凝縮されたりんごやぶどう、桃などの果物、それらを更に美味しくする料理人たち。<br>そして、これらの魅力をこれまで大事に培い、熱量高くまちづくりに取り組む担い手も、小布施が誇る宝である。
-          </p>
-          <p>
-            <em class="marker">そんな地域の担い手と、町内外から様々な経験やスキル、熱量をもって集う人々が手を携えれば、このまちは新たな可能性を切り拓くことができるはず。</em>
-          </p>
-          <p>
-            「小布施バーチャル町民会議」で、新たな挑戦が始まる。
-          </p>
+          <p>そんな小布施には、わずか4km四方という長野県で最も面積が小さな町でありながら、「栗」や「北斎」以外にもまだまだ多くのポテンシャルが詰まっている。江戸時代から続く歴史を誇る酒蔵や味噌蔵、「オープンガーデン」として公開されている個性豊かな庭、自然の恵みが凝縮されたりんごやぶどう、桃などの果物、それらを更に美味しくする料理人たち。<br>そして、これらの魅力をこれまで大事に培い、熱量高くまちづくりに取り組む担い手も、小布施が誇る宝である。</p>
+          <p><em class="marker">そんな地域の担い手と、町内外から様々な経験やスキル、熱量をもって集う人々が手を携えれば、このまちは新たな可能性を切り拓くことができるはず。</em></p>
+          <p>「小布施バーチャル町民会議」で、新たな挑戦が始まる。</p>
         </div>
       </div>
     </section>
@@ -46,8 +33,7 @@
     <span id="about" class="anchor"></span>
     <section class="sec sec_about">
       <div class="inner">
-        <h2 class="sec_title">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/tit_about.png" alt="ABOUT">
+        <h2 class="sec_title" data-en="ABOUT">
           小布施バーチャル町民会議とは
         </h2>
 
@@ -60,7 +46,7 @@
         <div class="about_block">
           <h3 class="about_block_title">どんな会議？</h3>
           <div class="about_block_text">
-            <p>今年度の「小布施バーチャル町民会議」は、小布施町に拠点を置く企業・団体と全国から集う参加者が力を合わせ、新規事業開発や課題解決に取り組むプログラムです。町内の企業・団体が外部人材と取り組みたいことをテーマとして設定し、2か月の間、小布施町でのフィールドワーク、オンラインでのディスカッションを行い、現地でのプロトタイプまで行います。</p>
+            <p>「小布施バーチャル町民会議」は、小布施町に拠点を置く企業・団体と全国から集う参加者が力を合わせ、新規事業開発や課題解決に取り組むプログラムです。町内の企業・団体が外部人材と取り組みたいことをテーマとして設定し、4か月の間、小布施町でのフィールドワーク、オンラインでのディスカッションを行い、現地でのプロトタイプまで行います。</p>
           </div>
         </div>
 
@@ -88,17 +74,17 @@
           <div class="about_gain">
             <h4 class="about_gain_num">1</h4>
             <div class="about_gain_image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/img_gain1.png" alt=""></div>
-            <p class="about_gain_text">地域のプレイヤーとともに<br>構想をカタチにする<br class="no-sp">生の体験を得る</p>
+            <p class="about_gain_text">地域のプレイヤーとともに<br>事業を生み出す<br class="no-sp">生の体験を得る</p>
           </div>
           <div class="about_gain">
             <h4 class="about_gain_num">2</h4>
             <div class="about_gain_image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/img_gain2.png" alt=""></div>
-            <p class="about_gain_text">自分の興味関心や<br>強みの活かし方を<br>実験する</p>
+            <p class="about_gain_text">リアルな現場で<br>自分の興味関心や<br>強みの活かし方を実験する</p>
           </div>
           <div class="about_gain">
             <h4 class="about_gain_num">3</h4>
             <div class="about_gain_image"><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/img_gain3.png" alt=""></div>
-            <p class="about_gain_text">「家」や「職場」以外で<br class="no-sp">仲間と出会い<br class="no-pc">活動できる<br class="no-sp">居場所を見つける</p>
+            <p class="about_gain_text">プログラムや地域の行事への参加を通じて「家」や「職場」以外で仲間と出会い活動できる居場所を見つける</p>
           </div>
         </section>
 
@@ -124,11 +110,14 @@
     <span id="theme" class="anchor"></span>
     <section class="sec sec_theme">
       <div class="inner">
-        <h2 class="sec_title">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/tit_theme.png" alt="THEME">
+        <h2 class="sec_title" data-en="THEME">
           テーマ
         </h2>
-
+        <div class="comming-soon">
+          <p class="sub-text">今回は「小布施の食」がテーマ！</p>
+          <p class="main-text">2023年8月下旬<span></span>詳細情報公開予定</p>
+        </div>
+        <?php /*
         <section class="theme">
           <header class="theme__title">
             <div class="theme__title__num">theme 1</div>
@@ -194,6 +183,7 @@
             </div>
           </div>
         </section>
+        */?>
       </div>
     </section>
 
@@ -201,8 +191,7 @@
     <span id="about-obuse" class="anchor"></span>
     <section class="sec sec_about-obuse">
       <div class="inner">
-        <h2 class="sec_title">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/tit_about-obuse.png" alt="THEME">
+        <h2 class="sec_title" data-en="OBUSE">
           小布施町とは
         </h2>
 
@@ -229,9 +218,9 @@
                 </a>
               </li>
               <li class="list_item">
-                <a href="https://notteke-obuse.com/" target="_blank" rel="noopener noreferrer">
-                  <span>小布施をもっと楽しむ体験ポータルサイト</span>
-                  <em>のってけ！おぶせ</em>
+                <a href="https://liff.line.me/1660734349-7dQXXgnZ/landing?follow=%40927jxcch&lp=P6AL26&liff_id=1660734349-7dQXXgnZ" target="_blank" rel="noopener noreferrer">
+                  <span>LINE公式アカウント　小布施町とつながるマガジン</span>
+                  <em>おぶせじん</em>
                 </a>
               </li>
               <li class="list_item list_item__conpact">
@@ -264,22 +253,19 @@
       </div>
     </section>
 
-    <!-- お申し込みはこちらから -->
+    <!-- プレエントリーはこちらから -->
     <section class="sec sec_inquery">
-      <a href="https://forms.gle/kshh7VuiuXKm5Rsd6" target="_blank" rel="noopener noreferrer" class="btn_inquery">お申し込みはこちらから</a>
+      <a href="https://forms.gle/AQgu6wqettxDyGh19" target="_blank" rel="noopener noreferrer" class="btn_inquery">プレエントリーはこちらから</a>
     </section>
 
     <!-- 日程 -->
     <span id="schedule" class="anchor"></span>
     <section class="sec sec_schedule">
       <div class="inner">
-        <h2 class="sec_title">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/tit_schedule.png" alt="SCHEDULE">
+        <h2 class="sec_title" data-en="SCHEDULE">
           日程
         </h2>
-        <p>
-          2月から3月までの2か月間、小布施町での2回の合宿を中心に、<br class="no-sp">オンラインも活用してプログラムを実施します。
-        </p>
+        <p>9月下旬から1月下旬までの4か月間、小布施町での2回の合宿を中心に、<br class="no-sp">オンラインも活用してプログラムを実施します。</p>
 
         <div class="schedule">
           <!-- DAY -->
@@ -292,10 +278,10 @@
             </h3>
             <div class="schedule__item__name">キックオフ</div>
             <div class="schedule__item__date">
-              <p class="date_day">2月1日（水）</p>
+              <p class="date_day">9月26日（火）</p>
               <dl class="date_time">
                 <div>
-                  <dd>20:00-21:30</dd>
+                  <dd>20:00-22:00</dd>
                 </div>
               </dl>
             </div>
@@ -310,17 +296,21 @@
             </h3>
             <div class="schedule__item__name">フィールドワーク</div>
             <div class="schedule__item__date">
-              <p class="date_day">2月11日（土）〜 12日（日）</p>
+              <p class="date_day">10月7日（土）〜 8日（日）</p>
               <dl class="date_time">
                 <div>
-                  <dt>11日</dt>
-                  <dd>12:00-18:00<br>（終了後に交流会を予定）</dd>
+                  <dt>7日</dt>
+                  <dd>11:00-18:00<br>（終了後に交流会を予定）</dd>
                 </div>
                 <div>
-                  <dt>12日</dt>
-                  <dd>9:00-13:00</dd>
+                  <dt>8日</dt>
+                  <dd>8:00-17:00</dd>
                 </div>
               </dl>
+            </div>
+            <div class="schedule__item__note">
+              <em>【特別企画】10月8日は<br class="no-pc">「町民運動会」に参加！（予定）</em>
+              <p>小布施町民が自治会（町内会）ごとに分かれて競い合う一大イベントが5年ぶりに復活！「おぶせファンチーム（仮）」を結成し、町民の方や過去に小布施に関わりのあった方などと交流します。</p>
             </div>
           </div>
           <!-- DAY -->
@@ -333,7 +323,7 @@
             </h3>
             <div class="schedule__item__name">仮説策定</div>
             <div class="schedule__item__date">
-              <p class="date_day">2月23日（木・祝）</p>
+              <p class="date_day">10月15日（土）</p>
               <dl class="date_time">
                 <div>
                   <dd>10:00-12:00</dd>
@@ -349,9 +339,9 @@
                 <div class="day_icon__text">オンライン</div>
               </div>
             </h3>
-            <div class="schedule__item__name">プロトタイプ計画</div>
+            <div class="schedule__item__name">中間報告</div>
             <div class="schedule__item__date">
-              <p class="date_day">3月11日（土）</p>
+              <p class="date_day">11月25日（土）</p>
               <dl class="date_time">
                 <div>
                   <dd>10:00-12:00</dd>
@@ -367,17 +357,17 @@
                 <div class="day_icon__text">小布施町</div>
               </div>
             </h3>
-            <div class="schedule__item__name">プロトタイプ実施</div>
+            <div class="schedule__item__name">最終報告</div>
             <div class="schedule__item__date">
-              <p class="date_day">3月25日（土）〜 26日（日）</p>
+              <p class="date_day">1月20日（土）〜 21日（日）</p>
               <dl class="date_time">
                 <div>
-                  <dt>25日</dt>
-                  <dd>10:00-18:00</dd>
+                  <dt>20日</dt>
+                  <dd>11:00-18:00<br>（終了後に交流会を予定）</dd>
                 </div>
                 <div>
-                  <dt>26日</dt>
-                  <dd>9:00-12:00</dd>
+                  <dt>21日</dt>
+                  <dd>9:00-15:00</dd>
                 </div>
               </dl>
             </div>
@@ -386,7 +376,8 @@
 
         <div class="schedule_after_program">
           <p class="indent_text">その他に週1～2時間程度のチームミーティングを想定しています。</p>
-          <p class="indent_text">新型コロナウイルス感染症の拡大状況により、日程や実施形態が変更になる可能性があります。</p>
+          <p class="indent_text">やむを得ない事情等により、日程や実施形態が変更になる可能性があります。</p>
+          <?php /*
           <div class="sep_schedule">
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/img-schedule-text.svg" alt="プログラム終了後">
           </div>
@@ -400,6 +391,7 @@
               <div class="schedule__item__name">実践期間（任意参加）</div>
             </div>
           </div>
+          */ ?>
         </div>
       </div>
     </section>
@@ -409,15 +401,14 @@
     <span id="details" class="anchor"></span>
     <section class="sec sec_details">
       <div class="inner">
-        <h2 class="sec_title">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/tit_details.png" alt="DETAILS">
+        <h2 class="sec_title" data-en="DETAILS">
           募集要項
         </h2>
 
         <div class="details_block">
           <h3 class="details_block_title">主催</h3>
           <div class="details_block_data">
-            <p>小布施町企画財政課・小布施町地域おこし協力隊</p>
+            <p>小布施町企画財政課</p>
           </div>
         </div>
         <div class="details_block">
@@ -429,14 +420,14 @@
         <div class="details_block">
           <h3 class="details_block_title">募集人数</h3>
           <div class="details_block_data">
-            <p>全10名程度（5名 × 2テーマ）</p>
+            <p>全12名程度（6名 × 2テーマ）</p>
           </div>
         </div>
         <div class="details_block">
           <h3 class="details_block_title">参加費</h3>
           <div class="details_block_data">
-            <p>5,000円／学生3,500円</p>
-            <p>現地での交流プログラムやプロジェクト推進に関する費用として利用します。<br>小布施来町時の宿泊費・交通費は各自ご負担ください。<br>学生料金は高校・大学・専修・各種学校の学生・生徒の方が対象となります。</p>
+            <p>20,000円／学生10,000円</p>
+            <p>現地での交流プログラム（交流会×2回）やプロジェクト推進に関する費用として利用します。<br>小布施来町時の宿泊費・交通費は各自ご負担ください。<br>学生料金は高校・大学・専修・各種学校の学生・生徒の方が対象となります。</p>
           </div>
         </div>
         <div class="details_block">
@@ -444,13 +435,14 @@
           <div class="details_block_data">
             <p class="note">ZoomやSlack等のオンラインツールを使用できる方<br>（オンラインツールの使用サポートは事務局では行いません。）</p>
             <p class="note">プログラムの全日程に参加いただける方</p>
+            <p class="note">上記に加え、週1～2時間程度のチームミーティングに参加できる方</p>
           </div>
         </div>
         <div class="details_block">
           <h3 class="details_block_title">応募締め切り</h3>
           <div class="details_block_data">
-            <p>2023年1月9日（月・祝）23:59</p>
-            <p>定員以上のご応募をいただいた場合は、応募フォームの内容を基に選考いたします。選考結果は1月13日（金）までにお知らせします。</p>
+            <p>2023年9月3日（日）23:59</p>
+            <p>定員以上のご応募をいただいた場合は、応募フォームの内容を基に選考いたします。選考結果は9月6日（金）までにお知らせします。</p>
           </div>
         </div>
         <div class="details_block">
@@ -473,8 +465,7 @@
     <span id="news" class="anchor"></span>
     <section class="sec sec_news">
       <div class="inner">
-        <h2 class="sec_title">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/tit_news.png" alt="NEWS">
+        <h2 class="sec_title" data-en="NEWS">
           運営だより
         </h2>
 
@@ -536,8 +527,7 @@
     <span id="faq" class="anchor"></span>
     <section class="sec sec_faq">
       <div class="inner">
-        <h2 class="sec_title">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/tit_faq.png" alt="FAQ">
+        <h2 class="sec_title" data-en="FAQ">
           よくあるご質問
         </h2>
 
@@ -550,7 +540,7 @@
           </div>
           <div class="faq_a">
             <span>A1</span>
-            <p>あります。テーマごとに5名程度の定員を設けております。</p>
+            <p>あります。テーマごとに6名程度の定員を設けております。</p>
           </div>
         </airticle>
         <airticle class="faq_block">
@@ -586,7 +576,7 @@
           </div>
           <div class="faq_a">
             <span>A4</span>
-            <p>参加費のお支払い方法については、参加が確定した方に1月13日（金）までにご案内いたします。</p>
+            <p>参加費のお支払い方法については、参加が確定した方に9月6日（金）までにご案内いたします。</p>
           </div>
         </airticle>
         <airticle class="faq_block">
@@ -640,9 +630,9 @@
       </div>
     </section>
 
-    <!-- お申し込みはこちらから -->
+    <!-- プレエントリーはこちらから -->
     <section class="sec sec_inquery">
-      <a href="https://forms.gle/kshh7VuiuXKm5Rsd6" target="_blank" rel="noopener noreferrer" class="btn_inquery">お申し込みはこちらから</a>
+      <a href="https://forms.gle/AQgu6wqettxDyGh19" target="_blank" rel="noopener noreferrer" class="btn_inquery">プレエントリーはこちらから</a>
     </section>
 
 <?php get_footer(); ?>

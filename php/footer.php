@@ -7,11 +7,14 @@
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo_footer.png" alt="小布施バーチャル町民会議">
       </div>
       <div class="footer_link">
-        <a class="button" href="https://virtual-obuse.com/2022/" target="_blank" rel="noopener noreferrer">
-          <span>小布施バーチャル町民会議2022はこちら<i><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/ico_blank.svg" alt=""></i></span>
+        <a class="button" href="./2021/" target="_blank" rel="noopener noreferrer">
+          <span>第1回小布施バーチャル町民会議はこちら<i><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/ico_blank.svg" alt=""></i></span>
         </a>
-        <a class="button" href="https://virtual-obuse.com/2021/" target="_blank" rel="noopener noreferrer">
-          <span>小布施バーチャル町民会議2021はこちら<i><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/ico_blank.svg" alt=""></i></span>
+        <a class="button" href="./2022/" target="_blank" rel="noopener noreferrer">
+          <span>第2回小布施バーチャル町民会議はこちら<i><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/ico_blank.svg" alt=""></i></span>
+        </a>
+        <a class="button" href="./2023-1/" target="_blank" rel="noopener noreferrer">
+          <span>第3回小布施バーチャル町民会議はこちら<i><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/ico_blank.svg" alt=""></i></span>
         </a>
       </div>
     </div>

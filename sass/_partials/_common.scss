@@ -13,7 +13,7 @@
 // section
 .sec {
   & > .inner {
-    padding-top: 80px;
+    padding-top: 70px;
     padding-bottom: 80px;
     @include maxW;
   }
@@ -21,7 +21,7 @@
 @include res_min( $break ) {
   .sec {
     & > .inner {
-      padding-top: 120px;
+      padding-top: 100px;
       padding-bottom: 120px;
     }
   }
@@ -33,24 +33,28 @@
   text-align: center;
   font-size: 3rem;
   font-weight: 900;
-  line-height: 1.667;
-  letter-spacing: .1em;
-  color: #5c2a00;
-  img {
+  line-height: calc(50 / 30);
+  letter-spacing: 0.1em;
+  &::before{
+    content: attr(data-en);
     display: block;
-    margin: 0 auto 20px;
-    width: auto;
-    height: 29px;
+    margin-bottom: 0.3em;
+    font-family: $ff-en;
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: calc(45 / 40);
+    letter-spacing: 0.1em;
+    color: #B98966;
   }
 }
 @include res_min( $break ) {
   .sec_title {
     font-size: 3.6rem;
-    font-weight: 900;
-    line-height: 1.778;
-    img {
-      margin-bottom: 30px;
-      height: 59px;
+    line-height: calc(64 / 36);
+    &::before{
+      margin-bottom: 0;
+      font-size: 8rem;
+      line-height: calc(80 / 50);
     }
   }
 }
@@ -61,7 +65,7 @@
   text-align: center;
   font-size: 2.8rem;
   font-weight: 900;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   span {
     display: block;
     font-size: 1.6rem;
@@ -81,20 +85,19 @@
 // ----------------------------------*/
 .indent_text
 {
-    margin-top: .5em;
-    padding-left: 1em;
-
-    text-indent: -1.1em;
-    letter-spacing: .1em;
+  margin-top: .5em;
+  padding-left: 1em;
+  text-indent: -1.1em;
+  letter-spacing: 0.1em;
 }
 .indent_text::before
 {
-    content: '・';
+  content: '・';
 }
 @include res_min( $break ) {
   .indent_text
   {
-      margin-top: 0;
+    margin-top: 0;
   }
 }
 
