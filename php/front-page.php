@@ -113,17 +113,18 @@
         <h2 class="sec_title" data-en="THEME">
           テーマ
         </h2>
+        <?php /*
         <div class="comming-soon">
           <p class="sub-text">今回は「小布施の食」がテーマ！</p>
           <p class="main-text">2023年8月下旬<span></span>詳細情報公開予定</p>
         </div>
-        <?php /*
+        */ ?>
         <section class="theme">
           <header class="theme__title">
             <div class="theme__title__num">theme 1</div>
             <h3 class="theme__title__hl">
-              <em class="theme__title__hl__main">北斎館</em>
-              <span class="theme__title__hl__sub">アートをもっと身近に</span>
+              <em class="theme__title__hl__main">オブセ牛乳</em>
+              <span class="theme__title__hl__sub">こだわりの味を、より多くの人に</span>
             </h3>
             <figure class="theme__title__image">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/img-theme1-header-image.png" alt="">
@@ -131,9 +132,9 @@
           </header>
           <div class="theme__body">
             <div class="theme__body__text">
-              <p>83歳にして小布施を訪れた浮世絵師の葛飾北斎。北斎が遺した貴重な肉筆画・版画作品を収蔵・展示しているのが北斎館です。1976年の開館以来、小布施観光の中心地となってきました。</p>
-              <p>その北斎館が、開館50年の節目に向けて、新たな挑戦を始めています。<br>「これまで美術館に興味がなかった若い人たちにも、北斎やアートを身近に感じてもらいたい。」そのような願いから、新しいアートギャラリーカフェ「ガラリ」の建設、若手伝統工芸作家やアーティストとの美術作品制作などに取り組みはじめています。</p>
-              <p>多様なエンターテインメントがあふれる現代。どうすれば、若い人たちがアートや日本美術を身近なものとして、楽しむことができるでしょうか。これまでの枠にとらわれない、新しい美術館のあり方を探ります。</p>
+              <p>天使と三日月のレトロなロゴが目印のオブセ牛乳。1950年の創業以来、手間暇をかける「80℃15分間殺菌」にこだわっており、コクがありながらさらっとした飲み心地で多くのファンを獲得しています。小布施町内の給食でも提供されており、オブセ牛乳を愛用する腕利きのパティシエも少なくないとか。しかし、消費期限が短いため流通が長野県内に限られ、牛乳消費量は全国的に減少傾向にあります。そんな中、世の中のニーズを見据えた変革の必要性を感じ、新たな商品展開・販売方法を検討しています。</p>
+              <p>2018年には、より多くのお客様に牛乳やマグカップ等の関連商品をお届けしたいと思い、ECサイトを開設。季節限定商品の販売やSNSの活用など、試行錯誤をしながら一定の成果を上げてきました。しかし、会社の主軸となるには遠く、ECサイトの運営にはまだまだ多くの研究・努力が必要であると代表の西岡さんは考えています。</p>
+              <p>決してリソースが潤沢な訳ではないけれど、知恵を絞ってさらに売上を伸ばしたい。オンラインやオフラインの接点を活用し、遠くに住む人にも「町の牛乳屋さん」の魅力を味わってもらうための戦略を描き、実践・検証を通じて突破口を探ります。</p>
             </div>
             <div class="theme__body__other">
               <figure class="theme__body__other__image">
@@ -141,10 +142,10 @@
               </figure>
               <div class="theme__body__other__link">
                 <p>●テーマの詳細はこちら</p>
-                <a href="https://obuse-town.note.jp/n/nd4583598109f" target="_blank" rel="noopener noreferrer" class="theme__body__other__link__item">
+                <a href="" target="_blank" rel="noopener noreferrer" class="theme__body__other__link__item">
                   <picture>
                     <source srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/btn-theme1-pc.png" media="(min-width: 768px)">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/btn-theme1-sp.png" alt="北斎館　塩澤耕平さん">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/btn-theme1-sp.png" alt="オブセ牛乳　西岡幸宏さん">
                   </picture>
                 </a>
               </div>
@@ -155,8 +156,8 @@
           <header class="theme__title">
             <div class="theme__title__num">theme 2</div>
             <h3 class="theme__title__hl">
-              <em class="theme__title__hl__main">松葉屋本店</em>
-              <span class="theme__title__hl__sub">人をつなぐ酒蔵へ</span>
+              <em class="theme__title__hl__main">穀平味噌醸造場</em>
+              <span class="theme__title__hl__sub">伝統の味噌を、新しい世代へ</span>
             </h3>
             <figure class="theme__title__image">
               <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/img-theme2-header-image.png" alt="">
@@ -164,8 +165,9 @@
           </header>
           <div class="theme__body">
             <div class="theme__body__text">
-              <p>江戸時代に創業し、「北信流」や「本吉乃川」といった銘柄で知られる老舗酒蔵・松葉屋本店。歴史を感じさせる蔵やレンガ造りの煙突が立ち並ぶ敷地は、自由に散策できるよう開放されています。近隣には200年以上の歴史を誇る栗菓子店、遠方からも客足が絶えない洋菓子店、佇まいも美しい懐石料理店などが軒を連ね、周遊する観光客の姿も多く見られます。</p>
-              <p>若者の酒離れや新型コロナウイルス感染症の拡大など、日本酒業界は厳しい現実にさらされています。そんななかでも「酒は人をつなぐ」という信念をもち、酒造りを続けてきた松葉屋本店。この地に店を構える蔵元として、酒造りにとどまらず、できることがあるのではないか。酒造りの時期以外は使われていない酒蔵や、回遊できる小径、周辺の個性的な店など、そこにある資源を活かし、酒蔵として「人をつなぐ」新たな可能性を探ります。</p>
+              <p>天明4（1784）年に小布施の豪商、穀屋平左衛門が味噌づくりを始めて以来、穀平味噌醸造場は、国産原料にこだわった天然醸造の味噌を作り続けてきました。</p>
+              <p>「若い人たちや海外の人たちにも、日本の食文化に深く根ざしてきた味噌の魅力を知ってもらいたい。」創業240周年の節目を来年迎えるにあたり、代表の小山さんは、伝統の味噌を新しい世代へつないでいく方法を考えています。</p>
+              <p>どうすれば、家で味噌汁を作ることが少なくなっている若い人たちや、まだ味噌が身近ではない海外の人たちに、味噌の魅力を伝え、生活の中に取り入れてもらえるでしょうか。それぞれのライフスタイルに合わせた、味噌の新しい提案の仕方を探ります。</p>
             </div>
             <div class="theme__body__other">
               <figure class="theme__body__other__image">
@@ -173,17 +175,118 @@
               </figure>
               <div class="theme__body__other__link">
                 <p>●テーマの詳細はこちら</p>
-                <a href="https://obuse-town.note.jp/n/n8e39936f5d46" target="_blank" rel="noopener noreferrer" class="theme__body__other__link__item">
+                <a href="" target="_blank" rel="noopener noreferrer" class="theme__body__other__link__item">
                   <picture>
                     <source srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/btn-theme2-pc.png" media="(min-width: 768px)">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/btn-theme2-sp.png" alt="松葉屋本店　市川博之さん">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/btn-theme2-sp.png" alt="穀平味噌醸造場　小山洋史さん">
                   </picture>
                 </a>
               </div>
             </div>
           </div>
         </section>
-        */?>
+      </div>
+    </section>
+
+    <!-- メンター -->
+    <span id="mentor" class="anchor"></span>
+    <section class="sec sec_mentor">
+      <div class="inner">
+        <h2 class="sec_title" data-en="MENTOR">
+          メンター
+        </h2>
+
+        <p class="mentor_intro">プログラムを通じて、テーマに関連する領域で活動する専門家に相談が可能です。</p>
+
+        <airticle class="mentor_block js_tgl_box">
+          <div class="mentor_block_main">
+            <h3 class="mentor_block_main_title">食品、事業創出</h3>
+            <div class="mentor_block_main_prof">
+              <figure class="mentor_block_main_prof_image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/img_mentor_miyata.png" alt="宮田湧太さん イメージ写真">
+              </figure>
+              <div class="inner">
+                <div class="mentor_block_main_prof_name">宮田湧太</div>
+                <div class="mentor_block_button">Profile</div>
+              </div>
+            </div>
+          </div>
+          <div class="mentor_block_hide">
+            <p>1993年生まれ。神奈川県横浜市出身。 大学卒業後、コンサルティング会社に入社。 食品・菓子・調味料メーカーや大手小売等の食品業界を専門に、戦略・新規事業案件を担当。SKS Japanの立上げ・運営メンバー（2017~2020）。プライベートでも料理好きが転じて調味料の魅力にハマり、おいしい調味料を求めて全国各地を行脚する。計300種近くの調味料を自宅に揃え料理に使うようになる。 2022年7月に地域の調味料販売に特化したECサイト「旅する調味料」の運営を開始。 2021年4月～小布施町在住。</p>
+          </div>
+        </airticle>
+
+        <airticle class="mentor_block js_tgl_box">
+          <div class="mentor_block_main">
+            <h3 class="mentor_block_main_title">マーケティング</h3>
+            <div class="mentor_block_main_prof">
+              <figure class="mentor_block_main_prof_image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/img_mentor_ueshima.png" alt="上島晴子さん イメージ写真">
+              </figure>
+              <div class="inner">
+                <div class="mentor_block_main_prof_name">上島晴子</div>
+                <div class="mentor_block_button">Profile</div>
+              </div>
+            </div>
+          </div>
+          <div class="mentor_block_hide">
+            <p>国内外でデジタルを専門にマーケティングを20年以上経験。大学卒業後、Panasonicで自治体向けシステム開発、ベネッセで通販サイトやしまじろうの海外事業戦略を担当。その後、亀田製菓でSNSチームのマネージャー、資生堂でデジタルGMを経て、現在ペット向け商品メーカーのマーケティング部門長を勤める。小布施と東京の2拠点ハイブリッドワーク中。</p>
+          </div>
+        </airticle>
+
+        <airticle class="mentor_block js_tgl_box">
+          <div class="mentor_block_main">
+            <h3 class="mentor_block_main_title">営業</h3>
+            <div class="mentor_block_main_prof">
+              <figure class="mentor_block_main_prof_image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/img_mentor_hirata.png" alt="平田憲太朗さん イメージ写真">
+              </figure>
+              <div class="inner">
+                <div class="mentor_block_main_prof_name">平田憲太朗</div>
+                <div class="mentor_block_button">Profile</div>
+              </div>
+            </div>
+          </div>
+          <div class="mentor_block_hide">
+            <p>新卒以来、キリンビール株式会社に勤務し、営業、営業企画、クラフトビール推進プロジェクト立ち上げなどを経験し、現場と本社のそれぞれの視点を持って、戦略立案から計画実行まで幅広い営業業務に従事。現在都内に住みながら、小布施にある古民家『小栗八平衛商店』を仲間と一緒に運営。2017年から小布施町をフィールドにアイデアを形にする「小布施インキュベーションキャンプ」への参加をきっかけに小布施とのつながりが生まれ、2020年の「バーチャル町民会議」に参加し、自ら提案した「まちとクラフトビール大作戦」の企画運営を担当。<br>参考：<a href="https://obuse-noren.com/yomoyama/120/" target="_blank" rel="noopener noreferrer">https://obuse-noren.com/yomoyama/120/</a></p>
+          </div>
+        </airticle>
+
+        <airticle class="mentor_block js_tgl_box">
+          <div class="mentor_block_main">
+            <h3 class="mentor_block_main_title">まちづくり、事業創出</h3>
+            <div class="mentor_block_main_prof">
+              <figure class="mentor_block_main_prof_image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/img_mentor_hayashi.png" alt="林志洋さん イメージ写真">
+              </figure>
+              <div class="inner">
+                <div class="mentor_block_main_prof_name">林志洋</div>
+                <div class="mentor_block_button">Profile</div>
+              </div>
+            </div>
+          </div>
+          <div class="mentor_block_hide">
+            <p>1990年、兵庫県神戸市出身、小布施町在住。「人と社会のポテンシャル最大化」をミッションに活動する、まちづくりや公共政策の専門家。 大学在学中にNPO法人Bizjapanを創設、イノベーター教育やコミュニティづくりの活動を始める。東京大学公共政策大学院修了後、戦略コンサルティング企業A.T.カーニーを経て独立。2020年より小布施に拠点を移し「総合政策推進専門官」として持続可能なまちづくりや、地元企業との事業創出に取り組むほか、福島県双葉町や神奈川県横浜市、東京都調布市など、全国の自治体での経験を持つ。</p>
+          </div>
+        </airticle>
+
+        <airticle class="mentor_block js_tgl_box">
+          <div class="mentor_block_main">
+            <h3 class="mentor_block_main_title">デザイン</h3>
+            <div class="mentor_block_main_prof">
+              <figure class="mentor_block_main_prof_image">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/img_mentor_suzuki.png" alt="鈴木美結さん イメージ写真">
+              </figure>
+              <div class="inner">
+                <div class="mentor_block_main_prof_name">鈴木美結</div>
+                <div class="mentor_block_button">Profile</div>
+              </div>
+            </div>
+          </div>
+          <div class="mentor_block_hide">
+            <p>静岡県焼津市産まれ。横浜市内の地域情報誌制作会社勤務を得て、2016年フリーランスとして独立。独立後はフリーランスの特性を活かし関東、関西、沖縄、北陸、と各地へ住み、印刷・広告・WEBデザイン、SNS運用、イラスト制作などを行う。第3回小布施バーチャル町民会議にて松葉屋本店のプロジェクトに参加。兎にも角にもお酒が大好き。</p>
+          </div>
+        </airticle>
       </div>
     </section>
 
@@ -253,9 +356,9 @@
       </div>
     </section>
 
-    <!-- プレエントリーはこちらから -->
+    <!-- お申し込みはこちらから -->
     <section class="sec sec_inquery">
-      <a href="https://forms.gle/AQgu6wqettxDyGh19" target="_blank" rel="noopener noreferrer" class="btn_inquery">プレエントリーはこちらから</a>
+      <a href="https://forms.gle/AQgu6wqettxDyGh19" target="_blank" rel="noopener noreferrer" class="btn_inquery">お申し込みはこちらから</a>
     </section>
 
     <!-- 日程 -->
@@ -630,9 +733,9 @@
       </div>
     </section>
 
-    <!-- プレエントリーはこちらから -->
+    <!-- お申し込みはこちらから -->
     <section class="sec sec_inquery">
-      <a href="https://forms.gle/AQgu6wqettxDyGh19" target="_blank" rel="noopener noreferrer" class="btn_inquery">プレエントリーはこちらから</a>
+      <a href="https://forms.gle/AQgu6wqettxDyGh19" target="_blank" rel="noopener noreferrer" class="btn_inquery">お申し込みはこちらから</a>
     </section>
 
 <?php get_footer(); ?>

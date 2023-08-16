@@ -563,6 +563,7 @@
 
 // 日程
 .sec_schedule {
+  background-color: #F7F7F7;
   .sec_title + p {
     margin-top: 40px;
   }
@@ -946,7 +947,7 @@
 }
 .theme .theme__title
 {
-    border: 2px solid #ebad05;
+    border: 2px solid $mainColor;
     border-radius: 10px;
     background-color: #fff;
 }
@@ -956,6 +957,7 @@
     font-size: 1.8rem;
     font-weight: 900;
     line-height: 1;
+    letter-spacing: 0;
 
     padding: 17px 0;
 
@@ -963,7 +965,7 @@
 
     color: #fff;
     border-radius: 7px 7px 0 0;
-    background-color: #ebad05;
+    background-color: $mainColor;
 }
 .theme .theme__title .theme__title__hl
 {
@@ -985,8 +987,8 @@
 
     letter-spacing: 0.1em;
 
-    color: #ebad05;
-    border-bottom: 1px solid #ebad05;
+    color: $mainColor;
+    border-bottom: 1px solid $mainColor;
 }
 .theme .theme__title .theme__title__hl .theme__title__hl__sub
 {
@@ -1030,7 +1032,7 @@
 
     letter-spacing: .05em;
 
-    color: #ebad05;
+    color: $mainColor;
 }
 .theme .theme__body .theme__body__other .theme__body__other__link .theme__body__other__link__item
 {
@@ -1228,7 +1230,7 @@
 
 // details
 .sec_details {
-  background-color: #F7F7F7;
+  background-color: #EAEAEA;
   .inner {
     @include maxW(772);
   }
@@ -1280,14 +1282,115 @@
   }
 }
 
+// mentor
+.sec_mentor{
+  background-color: #F7F7F7;
+}
+
+p.mentor_intro{
+  margin-top: 30px;
+}
+
+.mentor_block {
+  display: block;
+  margin-top: 12px;
+  &:first-of-type{
+    margin-top: 50px;
+  }
+  border: 2px solid $mainColor;
+  border-radius: 10px;
+  overflow: hidden;
+	.mentor_block_main {
+		.mentor_block_main_title {
+      background-color: $mainColor;
+      padding: 13px 10px 17px;
+      font-size: 2.4rem;
+      font-weight: 600;
+      color: #fff;
+      line-height: 1.4;
+      letter-spacing: 0.1em;
+      text-align: center;
+		}
+		.mentor_block_main_prof {
+      padding: 20px;
+      @include flex(nowrap, flex-start, stretch);
+			.mentor_block_main_prof_image {
+        flex: 0 0 100px;
+			}
+			.inner {
+        width: 100%;
+        padding-left: 18px;
+        @include flex(nowrap, space-between, stretch);
+        flex-direction: column;
+				.mentor_block_main_prof_name {
+          font-size: 2.2rem;
+          font-weight: 600;
+          letter-spacing: 0.1em;
+				}
+				.mentor_block_button {
+          @include flex(nowrap, space-between, center);
+          padding: 0 24px;
+          width: 100%;
+          height: 40px;
+          border: 1px solid $mainColor;
+          border-radius: 20px;
+          white-space: nowrap;
+          font-weight: 600;
+          letter-spacing: 0.05em;
+          color: $mainColor;
+          position: relative;
+          &::before,
+          &::after{
+            content: '';
+            background-color: $mainColor;
+            position: absolute;
+          }
+          &::before{
+            width: 18px;
+            height: 3px;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+          &::after{
+            width: 3px;
+            height: 18px;
+            right: 22px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+				}
+			}
+		}
+	}
+	.mentor_block_hide {
+    margin: 0 20px;
+    padding: 1em 0;
+    border-top: 1px solid $mainColor;
+    font-size: 1.4rem;
+    line-height: calc(25 / 14);
+    p{
+      overflow-wrap: break-word;
+      word-break: break-all;
+    }
+    a{
+      display: inline;
+      &:link, &:visited{
+        text-decoration: underline;
+        color: $mainColor;
+      }
+    }
+	}
+}
+
 // about obuse
 .sec_about-obuse{
-  background-color: #F7F7F7;
+  background-color: #EAEAEA;
 }
 
 // news
 .sec_news {
-  background-color: #EAEAEA;
+  background-color: #F7F7F7;
   .inner {
     padding-left: 42px;
     padding-right: 42px;
@@ -1363,7 +1466,7 @@
 
 // faq
 .sec_faq{
-  background-color: #F7F7F7;
+  background-color: #EAEAEA;
 }
 .faq_block {
   display: block;
