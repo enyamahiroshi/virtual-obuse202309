@@ -16,6 +16,7 @@
       <div class="contents_block1">
         <div class="inner">
           <h2 class="concept_title" data-en="CONCEPT">新たな挑戦を、ともに</h2>
+          <span class="concept_title_sub">地域企業と共創する4か月</span>
           <p>東京から新幹線とローカル線を乗り継いで2時間30分。<br>葛飾北斎が晩年を過ごし、「栗のまち」としても知られる長野県小布施町。</p>
           <p>小布施は江戸時代末期、北信地域最大の規模を誇った「六斎市」が開かれ、様々な物や人が行き交う場所として発展した。また、1980年代には暮らす人も訪れる人も心地よく過ごせる空間づくりを重視した「町並修景事業」を行い、2000年代以降は「協働と交流のまちづくり」の掛け声のもと、町内外の多様な人々のコラボレーションによりまちづくりが進められた。中でも2010年代には全国から熱意ある若者が集い「小布施」というフィールドを活かして事業構想に取り組む「小布施若者会議」を開催するなど、まちづくりの先進地としても知られている。<br>こうした歴史の中で、<em class="marker">内と外、官と民など異質なもの同士が溶けあう風土や、町にあるものを活かして独自の未来像を描く創造性</em>が育まれてきた。</p>
         </div>
@@ -119,6 +120,10 @@
           <p class="main-text">2023年8月下旬<span></span>詳細情報公開予定</p>
         </div>
         */ ?>
+        <div class="theme-intro">
+          <h3 class="theme-intro__title">地域の「食」のこれから</h3>
+          <p class="theme-intro__text">小規模ながらも多様な食のプレイヤーが集う小布施で、<br class="no-sp">文化や伝統が培ってきた個性豊かな「地域の食」の価値を最大化させる<br class="no-sp">商品/サービス、届け方、伝え方を考えます。</p>
+        </div>
         <section class="theme">
           <header class="theme__title">
             <div class="theme__title__num">theme 1</div>
@@ -142,7 +147,7 @@
               </figure>
               <div class="theme__body__other__link">
                 <p>●テーマの詳細はこちら</p>
-                <a href="" target="_blank" rel="noopener noreferrer" class="theme__body__other__link__item">
+                <a href="https://obuse-town.note.jp/n/n0db42d9eede6" target="_blank" rel="noopener noreferrer" class="theme__body__other__link__item">
                   <picture>
                     <source srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/btn-theme1-pc.png" media="(min-width: 768px)">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/btn-theme1-sp.png" alt="オブセ牛乳　西岡幸宏さん">
@@ -175,7 +180,7 @@
               </figure>
               <div class="theme__body__other__link">
                 <p>●テーマの詳細はこちら</p>
-                <a href="" target="_blank" rel="noopener noreferrer" class="theme__body__other__link__item">
+                <a href="https://obuse-town.note.jp/n/n1ee90644b20d" target="_blank" rel="noopener noreferrer" class="theme__body__other__link__item">
                   <picture>
                     <source srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/btn-theme2-pc.png" media="(min-width: 768px)">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/btn-theme2-sp.png" alt="穀平味噌醸造場　小山洋史さん">
@@ -356,9 +361,18 @@
       </div>
     </section>
 
-    <!-- お申し込みはこちらから -->
+    <!-- プレエントリーはこちらから -->
     <section class="sec sec_inquery">
-      <a href="https://forms.gle/AQgu6wqettxDyGh19" target="_blank" rel="noopener noreferrer" class="btn_inquery">お申し込みはこちらから</a>
+      <a href="https://forms.gle/AQgu6wqettxDyGh19" target="_blank" rel="noopener noreferrer" class="btn_inquery">プレエントリーはこちらから</a>
+    </section>
+    <!-- 申込みはこちら -->
+    <section class="sec sec_apply">
+      <div class="inner">
+        <div class="apply_text">
+          8/28 オンラインイベント開催！<em>地域の「食」のこれから</em>
+        </div>
+        <a href="https://ovc202309-food.peatix.com/?fbclid=IwAR1qw0lj2svSvwiFBztvXkKkO86TL6WJqgLtenO15tFcJVEmFhv3fYXK_Sk" target="_blank" rel="noopener noreferrer" class="btn_inquery">申込みはこちら</a>
+      </div>
     </section>
 
     <!-- 日程 -->
@@ -412,7 +426,7 @@
               </dl>
             </div>
             <div class="schedule__item__note">
-              <em>【特別企画】10月8日は<br class="no-pc">「町民運動会」に参加！（予定）</em>
+              <em>【特別企画】10月8日は<br class="no-pc">「町民運動会」に参加！</em>
               <p>小布施町民が自治会（町内会）ごとに分かれて競い合う一大イベントが5年ぶりに復活！「おぶせファンチーム（仮）」を結成し、町民の方や過去に小布施に関わりのあった方などと交流します。</p>
             </div>
           </div>
@@ -426,7 +440,7 @@
             </h3>
             <div class="schedule__item__name">仮説策定</div>
             <div class="schedule__item__date">
-              <p class="date_day">10月15日（土）</p>
+              <p class="date_day">10月15日（日）</p>
               <dl class="date_time">
                 <div>
                   <dd>10:00-12:00</dd>
@@ -462,14 +476,14 @@
             </h3>
             <div class="schedule__item__name">最終報告</div>
             <div class="schedule__item__date">
-              <p class="date_day">1月20日（土）〜 21日（日）</p>
+              <p class="date_day">2月3日（土）〜 4日（日）</p>
               <dl class="date_time">
                 <div>
-                  <dt>20日</dt>
+                  <dt>3日</dt>
                   <dd>11:00-18:00<br>（終了後に交流会を予定）</dd>
                 </div>
                 <div>
-                  <dt>21日</dt>
+                  <dt>4日</dt>
                   <dd>9:00-15:00</dd>
                 </div>
               </dl>
@@ -551,7 +565,7 @@
         <div class="details_block">
           <h3 class="details_block_title">応募方法</h3>
           <div class="details_block_data">
-            <p>小布施バーチャル町民会議ウェブサイト上の応募フォームから必要事項を入力の上ご応募ください。</p>
+            <p>本ウェブサイト上の「プレエントリーはこちら」のボタンから必要事項をご登録ください。登録が完了次第、ご登録いただいたメールアドレス宛に応募フォームのURLを自動送信いたします。応募フォームの記入・送信をもって応募完了となります。</p>
           </div>
         </div>
         <div class="details_block">
@@ -733,9 +747,18 @@
       </div>
     </section>
 
-    <!-- お申し込みはこちらから -->
+    <!-- プレエントリーはこちらから -->
     <section class="sec sec_inquery">
-      <a href="https://forms.gle/AQgu6wqettxDyGh19" target="_blank" rel="noopener noreferrer" class="btn_inquery">お申し込みはこちらから</a>
+      <a href="https://forms.gle/AQgu6wqettxDyGh19" target="_blank" rel="noopener noreferrer" class="btn_inquery">プレエントリーはこちらから</a>
+    </section>
+    <!-- 申込みはこちら -->
+    <section class="sec sec_apply">
+      <div class="inner">
+        <div class="apply_text">
+          8/28 オンラインイベント開催！<em>地域の「食」のこれから</em>
+        </div>
+        <a href="https://ovc202309-food.peatix.com/?fbclid=IwAR1qw0lj2svSvwiFBztvXkKkO86TL6WJqgLtenO15tFcJVEmFhv3fYXK_Sk" target="_blank" rel="noopener noreferrer" class="btn_inquery">申込みはこちら</a>
+      </div>
     </section>
 
 <?php get_footer(); ?>

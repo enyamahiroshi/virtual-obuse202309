@@ -29,15 +29,16 @@
         <li class="menu_item"><a href="#concept">コンセプト</a></li>
         <li class="menu_item"><a href="#about">小布施バーチャル町民会議とは</a></li>
         <li class="menu_item"><a href="#theme">テーマ</a></li>
+        <li class="menu_item"><a href="#mentor">メンター</a></li>
         <li class="menu_item"><a href="#about-obuse">小布施町とは</a></li>
         <li class="menu_item"><a href="#schedule">日程</a></li>
         <li class="menu_item"><a href="#details">募集要項</a></li>
         <li class="menu_item"><a href="#news">運営だより</a></li>
         <li class="menu_item"><a href="#faq">よくあるご質問</a></li>
-        <li class="menu_item menu_item__inquery"><a href="https://forms.gle/AQgu6wqettxDyGh19" target="_blank" rel="noopener noreferrer">お申し込み</a></li>
+        <li class="menu_item menu_item__inquery"><a href="https://forms.gle/AQgu6wqettxDyGh19" target="_blank" rel="noopener noreferrer">プレエントリー</a></li>
       </ul>
     </nav>
-    <a href="https://forms.gle/AQgu6wqettxDyGh19" target="_blank" rel="noopener noreferrer" class="button_inquery">お申し込み</a>
+    <a href="https://forms.gle/AQgu6wqettxDyGh19" target="_blank" rel="noopener noreferrer" class="button_inquery">プレ<br>エントリー</a>
     <button class="menu_bar js_tgl_menu"><span class="menu_bar_line"></span></button>
   </header>
 

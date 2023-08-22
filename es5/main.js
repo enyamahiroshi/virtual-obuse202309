@@ -54,6 +54,18 @@
   });
 
   /* --------------------------------------------------
+    開閉コンテンツ
+  -------------------------------------------------- */
+  const tglBox = $('.js_tgl_box');
+  const hideCont = $('.mentor_block_hide');
+  $(window).on('load', function() {
+    hideCont.hide();
+    tglBox.on('tap click', function(){
+      $(this).toggleClass(classname).find(hideCont).slideToggle('fast');
+    });
+  });
+
+  /* --------------------------------------------------
     open/close
   -------------------------------------------------- */
   const $trg = $('.faq_a');
